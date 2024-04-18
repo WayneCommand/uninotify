@@ -1,0 +1,14 @@
+name = "uninotify"
+main = "src/worker.js"
+compatibility_date = "2024-04-18"
+workers_dev = true
+
+[[routes]]
+pattern = "notify.waynecommand.com"
+zone_name = "waynecommand.com"
+custom_domain = true
+
+[vars]
+iyuu_token = ""
+ftqq_token = ""
+api_key = ""
