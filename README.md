@@ -59,3 +59,7 @@ curl -X POST --location "https://notify.waynecommand.com/wechat" \
 
 
 
+
+## Roadmap
+
+- [ ] Add more platforms
