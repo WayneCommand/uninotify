@@ -275,9 +275,9 @@ curl -X POST --location "https://notify.waynecommand.com/wechat" \
     </div>
     <script>
         function copyToClipboard() {
-            const text = \`curl -X POST --location "https://notify.waynecommand.com/wechat" \\
-    -H "Content-Type: application/json" \\
-    -H "Authorization: Bearer apikey" \\
+            const text = \`curl -X POST --location "https://notify.waynecommand.com/wechat" \\\\
+    -H "Content-Type: application/json" \\\\
+    -H "Authorization: Bearer apikey" \\\\
     -d '{
           "platform": "",
           "apiToken": "",
