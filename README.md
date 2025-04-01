@@ -26,6 +26,35 @@ Read the documentation https://developers.cloudflare.com/workers
 Stuck? Join us at https://discord.gg/cloudflaredev
 
 
+### API Docs
+
+# API Docs
+
+## Wechat Notification API
+
+This API allows you to send notifications to Wechat using the Uninotify service.
+
+### Endpoint
+
+`POST https://notify.waynecommand.com/wechat`
+
+### Headers
+
+- `Content-Type: application/json`
+- `Authorization: Bearer {apiKey}`
+
+### Request Body
+
+The request body must be a JSON object containing the following fields:
+
+| Field      | Type   | Description                                      |
+|------------|--------|--------------------------------------------------|
+| platform   | string | (Optional) The platform to use. Defaults to `iyuu`. Valid options are `ftqq` and `iyuu`. |
+| apiToken   | string | (Optional) The API token to use. Defaults to the environment variable. |
+| title      | string | (Optional) The title of the notification. Defaults to "Server Notify". |
+| content    | string | (Optional) The content of the notification. Defaults to "This is a default message, please check your server status." |
+
+
 ## Client
 
 ### JetBrains Http Tool
