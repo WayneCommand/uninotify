@@ -4,4 +4,5 @@ interface Env {
 	iyuu_token: string;
 	ftqq_token: string;
 	api_key: string;
+	ASSETS: ASSETS;
 }

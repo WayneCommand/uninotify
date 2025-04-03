@@ -29,6 +29,11 @@
 	 * https://developers.cloudflare.com/workers/runtime-apis/bindings/
 	 */
 
+	"assets": {
+		"directory": "./html/",
+		"binding": "ASSETS"
+	 },
+
 	/**
 	 * Environment Variables
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
