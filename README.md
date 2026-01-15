@@ -30,6 +30,17 @@ Stuck? Join us at https://discord.gg/cloudflaredev
 
 # API Docs
 
+## Bark Notification API
+
+This API allows you to send notifications to Bark using the Uninotify service.
+
+
+### Endpoint
+
+`POST https://notify.waynecommand.com/{device-group}`
+
+
+
 ## Wechat Notification API
 
 This API allows you to send notifications to Wechat using the Uninotify service.
@@ -92,3 +103,9 @@ curl -X POST --location "https://notify.waynecommand.com/wechat" \
 ## Roadmap
 
 - [ ] Add more platforms
+- [ ] group key
+
+
+
+
+

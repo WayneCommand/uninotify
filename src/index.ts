@@ -63,8 +63,6 @@ export default {
 				} as NotifyResponse, 401);
 			}
 
-
-
 			switch (url.pathname) {
 				// 兼容以前的API？
 				case "/wechat": {
