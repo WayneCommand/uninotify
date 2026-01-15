@@ -4,13 +4,18 @@ import { z } from "zod";
 
 export type AppContext = Context<{ Bindings: Env }>;
 
-export const Task = z.object({
-	name: Str({ example: "lorem" }),
-	slug: Str(),
-	description: Str({ required: false }),
-	completed: z.boolean().default(false),
-	due_date: DateTime(),
-});
+// Constants
+export const API_ENDPOINTS = {
+	FTQQ: "https://sctapi.ftqq.com",
+	BARK: "https://bark.mikuworld.asia",
+} as const;
+
+
+export interface NotifyEntity {
+	title: string;
+	content?: string;
+	client: string;
+}
 
 export const NotifyRequest = z.object({
 	title: Str({ required: false }),

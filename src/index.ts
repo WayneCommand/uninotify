@@ -1,6 +1,7 @@
 import { fromHono } from "chanfana";
 import { Hono } from "hono";
 import { bearerAuth } from 'hono/bearer-auth'
+import { WechatEndpoint } from "./endpoints/wechat";
 
 // Start a Hono app
 const app = new Hono<{ Bindings: Env }>();
@@ -14,7 +15,7 @@ const openapi = fromHono(app, {
 // static assets
 openapi.get("/", () => Response.json({"success": true}));
 // 支持端点发送
-openapi.get("/wechat/:client", );
+openapi.get("/wechat/:client", WechatEndpoint);
 openapi.get("/bark/:client", );
 // 群组发送（不分类型）
 openapi.get("/:group",);
