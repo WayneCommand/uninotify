@@ -1,0 +1,18 @@
+{
+  "bark_14": {
+    "token": "abcd",
+    "type": "bark"
+  },
+  "bark_17": {
+    "token": "1234",
+    "type": "bark"
+  },
+  "wechat_main": {
+    "token": "abcd",
+    "type": "wechat"
+  },
+  "wechat_wayne": {
+    "token": "abcd",
+    "type": "wechat"
+  }
+}
