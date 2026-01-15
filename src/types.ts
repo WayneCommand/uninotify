@@ -13,8 +13,13 @@ export const API_ENDPOINTS = {
 
 export interface NotifyEntity {
 	title: string;
-	content?: string;
+	content?: string; // body
 	client: string;
+	badge?: number;
+	sound?: string;
+	icon?: string;
+	group?: string;
+	url?: string;
 }
 
 export const NotifyRequest = z.object({

@@ -2,6 +2,7 @@ import { fromHono } from "chanfana";
 import { Hono } from "hono";
 import { bearerAuth } from 'hono/bearer-auth'
 import { WechatEndpoint } from "./endpoints/wechat";
+import { BarkEndpoint } from "./endpoints/bark";
 
 // Start a Hono app
 const app = new Hono<{ Bindings: Env }>();
@@ -16,9 +17,9 @@ const openapi = fromHono(app, {
 openapi.get("/", () => Response.json({"success": true}));
 // 支持端点发送
 openapi.get("/wechat/:client", WechatEndpoint);
-openapi.get("/bark/:client", );
+openapi.get("/bark/:client", BarkEndpoint);
 // 群组发送（不分类型）
-openapi.get("/:group",);
+openapi.post("/:group",);
 
 // Register OpenAPI endpoints
 // You may also register routes for non OpenAPI directly on Hono
