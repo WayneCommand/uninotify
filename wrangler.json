@@ -1,0 +1,24 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "uninotify",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-06-29",
+	"compatibility_flags": ["nodejs_compat_v2"],
+	"workers_dev": true,
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+			"binding": "KV",
+			"id": "dd2d60e8535449b0993da767312d6f38"
+		}
+	],
+	"vars": {
+		"SERVICE_TOKEN": ""
+	},
+	"assets": {
+		"directory": "./public/",
+		"binding": "ASSETS"
+	}
+}
