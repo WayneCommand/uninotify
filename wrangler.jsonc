@@ -38,7 +38,7 @@
 	 * https://developers.cloudflare.com/workers/configuration/secrets/
 	 */
 	"vars": {
-		"CLIENT_KEY": ""
+		"SERVICE_TOKEN": ""
 	},
 	/**
 	 * Static Assets

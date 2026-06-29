@@ -7,7 +7,7 @@ declare namespace Cloudflare {
 	}
 	interface Env {
 		KV: KVNamespace;
-		CLIENT_KEY: string;
+		SERVICE_TOKEN: string;
 		ASSETS: Fetcher;
 	}
 }

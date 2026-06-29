@@ -96,16 +96,3 @@ curl -X POST --location "https://notify.waynecommand.com/wechat" \
           \"title\": \"this is a new notify\"
         }"
 ```
-
-
-
-
-## Roadmap
-
-- [ ] Add more platforms
-- [ ] group key
-
-
-
-
-
